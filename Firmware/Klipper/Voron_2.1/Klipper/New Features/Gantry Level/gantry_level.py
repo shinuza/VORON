@@ -21,7 +21,7 @@ class GantryLevel:
             raise config.error("Unable to parse gantry_corners in %s" % (
                 config.get_name()))
         if len(gantry_corners) < 2:
-            raise config.error("ganry_level requires at least two gantry_corners")
+            raise config.error("gantry_level requires at least two gantry_corners")
         self.probe_location = [float(probe_location[0].strip()), float(probe_location[1].strip())]
         self.z_steppers = []
         # Register GANTRY_LEVEL command
